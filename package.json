@@ -9,7 +9,7 @@
   },
   "build": {
     "appId": "cn.mashaojie.chat",
-    "productName": "Chatgpt App",
+    "productName": "chatgpt-app",
     "directories": {
       "output": "dist"
     },
