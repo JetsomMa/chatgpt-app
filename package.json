@@ -1,0 +1,33 @@
+{
+  "name": "chatgpt-app",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "cn.mashaojie.chat",
+    "productName": "Chatgpt App",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "icon/icon.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "icon/icon.icns"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "icon/icon.png"
+    }
+  },
+  "devDependencies": {
+    "electron": "^25.2.0",
+    "electron-builder": "^24.4.0"
+  }
+}
