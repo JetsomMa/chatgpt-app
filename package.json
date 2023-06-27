@@ -15,15 +15,15 @@
     },
     "win": {
       "target": "nsis",
-      "icon": "icon/icon.ico"
+      "icon": "icon/icon2.ico"
     },
     "mac": {
       "target": "dmg",
-      "icon": "icon/icon.icns"
+      "icon": "icon/icon2.icns"
     },
     "linux": {
       "target": "AppImage",
-      "icon": "icon/icon.png"
+      "icon": "icon/icon2.png"
     }
   },
   "devDependencies": {
