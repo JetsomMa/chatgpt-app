@@ -20,13 +20,17 @@ function createWindow () {
     show: false
   })
 
-  mainWindow.loadURL('https://chat.mashaojie.cn')
+  if (!mainWindow.isDestroyed()) {
+    mainWindow.loadURL('https://chat.mashaojie.cn')
+  }
 
   mainWindow.webContents.on('did-finish-load', () => {
-    if (!splashWindowClosed) {
+    if (!splashWindow.isDestroyed() && !splashWindowClosed) {
       splashWindow.close()
       splashWindowClosed = true
-      mainWindow.show()
+      if (!mainWindow.isDestroyed()) {
+        mainWindow.show()
+      }
     }
   })
 }
